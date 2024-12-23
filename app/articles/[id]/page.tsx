@@ -1,4 +1,4 @@
-export default function Articles({ params}: { params: { id: string } }) {
+export default function Articles({ params }: { params: { id: number } }) {
   return (
     <div>
       <h1>Page Page</h1>
