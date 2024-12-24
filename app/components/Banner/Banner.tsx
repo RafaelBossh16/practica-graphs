@@ -2,18 +2,18 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const Banner = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    setMousePosition({ x: clientX, y: clientY });
-  };
+  // const handleMouseMove = (e: React.MouseEvent) => {
+    // const { clientX, clientY } = e;
+    // setMousePosition({ x: clientX, y: clientY });
+  // };
   return (
     <div
-      onMouseMove={handleMouseMove}
+      // onMouseMove={handleMouseMove}
       className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-400 relative overflow-hidden"
     >
       <motion.img
@@ -23,8 +23,8 @@ export const Banner = () => {
         initial={{ x: 0, y: 0 }}
         animate={
           {
-            x: mousePosition.x / 20 - window.innerWidth / 40,
-            y: mousePosition.y / 20 - window.innerHeight / 40
+            // x: mousePosition.x / 20 - window.innerWidth / 40,
+            // y: mousePosition.y / 20 - window.innerHeight / 40
           }
         }
         transition={{ duration: 1 }}

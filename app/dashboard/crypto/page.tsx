@@ -3,10 +3,12 @@ import dynamic from "next/dynamic";
 import { fetchCryptoHistory } from "@/app/utils/fetchCryptoHistory";
 import { useQuery } from "@tanstack/react-query";
 
-const CryptoLineChart = dynamic(() => import("@/app/components/CryptoLineChart/CryptoLineChart"), 
+const CryptoLineChart = dynamic(
+  () => import("@/app/components/CryptoLineChart/CryptoLineChart"), 
   {
     loading: () => <p>Cargando chart...</p>
-})
+  } 
+);
 
 export default function Crypto() {
 
